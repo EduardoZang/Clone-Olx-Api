@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OlxApi</name>
+    </assembly>
+    <members>
+        <member name="M:OlxApi.Controllers.AdController.AddAd(OlxApi.Dtos.CreateAdDto)">
+            <summary>
+            Adiciona um anúncio ao banco de dados
+            </summary>
+            <param name="addAdDto">Objeto com os campos necessários para criação de um anúncio</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.AdController.VisualizaAd(System.Int32,System.Int32)">
+            <summary>
+            Exibe um anúncio salvo no banco de dados
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.AdController.VisualizaAdId(System.Int32)">
+            <summary>
+            Exibe um anúncio específico salvo no banco de dados através do id
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.AdController.AtualizaAd(System.Int32,OlxApi.Dtos.UptadeAdDto)">
+            <summary>
+            Altera todos os elementos de um anúncio no banco de dados
+            </summary>
+            <param name="adDto">Objeto com os campos necessários para alteração de um anúncio</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.AdController.AtualizaAdId(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{OlxApi.Dtos.UptadeAdDto})">
+            <summary>
+            Altera um elemento em específico de um anúncio no banco de dados através do id
+            </summary>
+            <param name="patch">Objeto com os campos necessários para alteração específica de um anúncio</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.AdController.DeletaAd(System.Int32)">
+            <summary>
+            Deleta um anúncio no banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a exclusão seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.CategoryController.AddCategory(OlxApi.Dtos.CreateCategoryDto)">
+            <summary>
+            Adiciona uma categoria ao banco de dados
+            </summary>
+            <param name="categoryDto">Objeto com os campos necessários para criação de uma categoria</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.CategoryController.VisualizaCategory(System.Int32,System.Int32)">
+            <summary>
+            Exibe uma categoria salva no banco de dados
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.CategoryController.VisualizaCategoryId(System.Int32)">
+            <summary>
+            Exibe uma categoria específica salva no banco de dados através do id
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.CategoryController.AtualizaCategory(System.Int32,OlxApi.Dtos.UptadeCategoryDto)">
+            <summary>
+            Altera todos os elementos de uma categoria no banco de dados
+            </summary>
+            <param name="categoryDto">Objeto com os campos necessários para alteração de uma categoria</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.CategoryController.AtualizaCategoryId(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{OlxApi.Dtos.UptadeCategoryDto})">
+            <summary>
+            Altera um elemento em específico de uma categoria no banco de dados
+            </summary>
+            <param name="patch">Objeto com os campos necessários para alteração de uma categoria</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.CategoryController.DeletaCategory(System.Int32)">
+            <summary>
+            Deleta uma categoria no banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a exclusão seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.ImageController.AddImg(OlxApi.Dtos.CreateImageDto)">
+            <summary>
+            Adiciona uma imagem ao banco de dados
+            </summary>
+            <param name="addImageDto">Objeto com os campos necessários para adição de uma imagem</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.ImageController.VisualizaImage(System.Int32,System.Int32)">
+            <summary>
+            Exibe uma imagem salva no banco de dados
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.ImageController.VisualizaImageId(System.Int32)">
+            <summary>
+            Exibe uma imagem específica salvo no banco de dados através do id
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.ImageController.AtualizaImage(System.Int32,OlxApi.Dtos.UptadeImageDto)">
+            <summary>
+            Altera todos os elementos de uma imagem no banco de dados
+            </summary>
+            <param name="imageDto">Objeto com os campos necessários para alteração de uma imagem</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.ImageController.AtualizaImageId(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{OlxApi.Dtos.UptadeImageDto})">
+            <summary>
+            Altera um elemento em específico de uma imagem no banco de dados através do id
+            </summary>
+            <param name="patch">Objeto com os campos necessários para alteração específica de uma imagem</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.ImageController.DeletaImage(System.Int32)">
+            <summary>
+            Deleta uma imagem no banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a exclusão seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.StateController.AddState(OlxApi.Dtos.CreateStateDto)">
+            <summary>
+            Adiciona um estado ao banco de dados
+            </summary>
+            <param name="stateDto">Objeto com os campos necessários para criação de um estado</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.StateController.VisualizaState(System.Int32,System.Int32)">
+            <summary>
+            Exibe um estado salvo no banco de dados
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.StateController.VisualizaStateId(System.Int32)">
+            <summary>
+            Exibe um estado específico salvo no banco de dados através do id
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.StateController.AtualizaState(System.Int32,OlxApi.Dtos.UptadeStateDto)">
+            <summary>
+            Altera todos os elementos de um estado no banco de dados
+            </summary>
+            <param name="stateDto">Objeto com os campos necessários para alteração de um estado</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.StateController.AtualizaStateId(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{OlxApi.Dtos.UptadeStateDto})">
+            <summary>
+            Altera um elemento em específico de um estado no banco de dados
+            </summary>
+            <param name="patch">Objeto com os campos necessários para alteração de um estado</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.StateController.DeletaState(System.Int32)">
+            <summary>
+            Deleta um estado no banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a exclusão seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.UserController.AddUser(OlxApi.Dtos.CreateUserDto)">
+            <summary>
+            Adiciona um usuário ao banco de dados
+            </summary>
+            <param name="userDto">Objeto com os campos necessários para criação de um usuário</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.UserController.VisualizaUser(System.Int32,System.Int32)">
+            <summary>
+            Exibe um usuário salvo no banco de dados
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.UserController.VisualizaUserId(System.Int32)">
+            <summary>
+            Exibe um usuário específico salvo no banco de dados através do id
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.UserController.AtualizaUser(System.Int32,OlxApi.Dtos.UptadeUserDto)">
+            <summary>
+            Altera todos os elementos de um usuário no banco de dados
+            </summary>
+            <param name="userDto">Objeto com os campos necessários para alteração de um usuário</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.UserController.AtualizaUserId(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{OlxApi.Dtos.UptadeUserDto})">
+            <summary>
+            Altera um elemento em específico de um usuário no banco de dados
+            </summary>
+            <param name="patch">Objeto com os campos necessários para alteração de um usuário</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:OlxApi.Controllers.UserController.DeletaUser(System.Int32)">
+            <summary>
+            Deleta um usuário no banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a exclusão seja feita com sucesso</response>
+        </member>
+    </members>
+</doc>

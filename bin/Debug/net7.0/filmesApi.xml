@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>filmesApi</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesApi.Controllers.FilmeController.AdicionarFIlme(FilmesApi.Data.Dtos.CreateFilmeDto)">
+            <summary>
+            Adiciona um filme ao banco de dados
+            </summary>
+            <param name="filmeDto">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilme(System.Int32,System.Int32)">
+            <summary>
+            Recupera um filme salvo no banco de dados
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmeId(System.Int32)">
+            <summary>
+            Recupera um filme salvo no banco de dados através do id
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso operação seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AtualizaFilme(System.Int32,FilmesApi.Data.Dtos.UptadeFilmeDto)">
+            <summary>
+            Altera todos os elementos de um filme no banco de dados
+            </summary>
+            <param name="filmeDto">Objeto com os campos necessários para alteração de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AtualizaFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesApi.Data.Dtos.UptadeFilmeDto})">
+            <summary>
+            Altera um elemento em específico de um filme no banco de dados
+            </summary>
+            <param name="id">Objeto com os campos necessários para alteração de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso alteração seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.DeletaFilme(System.Int32)">
+            <summary>
+            Deleta um filme no banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a exclusão seja feita com sucesso</response>
+        </member>
+    </members>
+</doc>
